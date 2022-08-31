@@ -15,6 +15,15 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to game server!');
     conn.write('Name: MTB');
+    // setTimeout(() => {
+    //   conn.write('Move: up');
+    // }, 50);
+    // setTimeout(() => {
+    //   conn.write('Move: left');
+    // }, 550);
+    // setTimeout(() => {
+    //   conn.write('Move: down');
+    // }, 1050);
   })
 
   return conn;
