@@ -3,6 +3,6 @@ const { setupInput } = require('./input');
 const { connect } = require('./client.js');
 
 console.log('Connecting ...');
-connect();
+const retObj = connect();
 
-setupInput();
+setupInput(retObj);
